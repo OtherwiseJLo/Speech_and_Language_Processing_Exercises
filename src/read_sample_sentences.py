@@ -1,8 +1,10 @@
+from typing import List
+
 def match_found(regex, sentence: str) -> bool:
     return bool(regex.search(sentence))
 
 
-def test_regex(regex, sentences):
+def test_regex(regex, sentences: List[str]):
     test_case = {}
     for line in sentences:
         print(line)
